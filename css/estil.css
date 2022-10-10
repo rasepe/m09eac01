@@ -1,0 +1,14 @@
+.topnav{
+	display: flex;
+    justify-content: space-between;
+    background-color:antiquewhite;
+}
+
+.topnav input {
+    flex-basis: 40%;
+    background-color: salmon;
+}
+
+/*
+prova
+*/
