@@ -79,6 +79,26 @@ h2, #anunci3 {
     float:right;
 }
 
+
+#tosignup {
+   
+    border-style: solid;
+    border-width: 1px;
+}
+.signup {
+    margin-top: 1rem;
+}
+
+#submit {
+    margin-top: 1rem;
+
+}
+
+.login {
+    margin-top: 0.5rem;
+    background-color: antiquewhite;
+}
+
 @media only screen and (max-width: 768px) {
 
     .topnav {
@@ -317,5 +337,13 @@ nav a {
 .llegirmes {
     display: none;
 }
+
+
+
+.noindex {
+    margin-top: 5rem;
+}
+
+
 
 }
