@@ -65,7 +65,7 @@ h2, #anunci3 {
     width: fit-content;
 }
 
-#resultats p, #resultats .preu, .retorn {
+#detall p, #resultats p, #detall .preu, #resultats .preu, .retorn {
     text-align: left;
 }
 
@@ -75,7 +75,7 @@ h2, #anunci3 {
     color:cadetblue;
 }
 
-#resultats button {
+#detall button, #resultats button {
     float:right;
 }
 
@@ -151,11 +151,11 @@ display: none;
             margin-bottom: auto;
         }
 
-        .second {
+        #resultats .second {
             display: none;
         }
 
-        .comprar {
+        #resultats .comprar {
             display: none;
         }
            
