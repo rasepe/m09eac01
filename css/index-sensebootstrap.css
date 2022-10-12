@@ -1,40 +1,11 @@
 header {
-    position: fixed;
-    background-color: white;
-} 
-
-
-
-.headerelement {
-    margin-top: 1.5rem;
+    height: 0px!important;
 }
 
 nav, #anunci1, #anunci2 {
     display: none;
 }
 
-
-input {
-    width: 100%;
-}
-
-.row {
-    text-align: center;
-}
-
-.imatgeresultat {
-    float:left;
-}
-
-.menu {
-    border-style: solid;
-    border-width: 1px;
-}
-
-
-button {
-    border-width: 1px;
-}
 
 /*
 .articles h1 {
@@ -46,13 +17,6 @@ h2, #anunci3 {
     border-width: 1px;
 }
 
-#ofertes {
-    
-        margin-top: 0px;
-
-}
-
-
 
 #copyright {
     content: "\a";
@@ -61,34 +25,10 @@ h2, #anunci3 {
     justify-content: center;
 }
 
-#resultats {
-    width: fit-content;
-}
-
-#resultats p, #resultats .preu, .retorn {
-    text-align: left;
-}
-
-
-
-.retorn {
-    color:cadetblue;
-}
-
-#resultats button {
-    float:right;
-}
-
 @media only screen and (max-width: 768px) {
 
     .topnav {
         background-color: white;
-    }
-
-
-
-    #oferta2, #oferta3, #oferta4, #paquet2, #paquet3, #paquet4 {
-        margin-bottom: -30px; 
     }
 
     #oferta1 img {
@@ -108,7 +48,6 @@ h2, #anunci3 {
 
 .link button {
     float: right;
-    margin-top: 2rem;
 }
 
 #paquet1 img {
@@ -147,18 +86,6 @@ display: none;
         }
 
    
-        .footer {
-            margin-bottom: auto;
-        }
-
-        .second {
-            display: none;
-        }
-
-        .comprar {
-            display: none;
-        }
-           
 
 }
 
@@ -174,11 +101,11 @@ display: none;
     #anunci3 {
         display: none;
     }
-/*
+
     i.fa-solid, .articles h1 {
         display:none;
     }
-*/
+
     h2 {
         border-style: none;
         
@@ -199,11 +126,11 @@ display: none;
 }
 
 nav {
-    display: block;
-    /* justify-content: space-between; */
+    display: flex;
+    justify-content: space-evenly;
     /*space-between;*/
-    /* border-style: solid;
-    border-width: 1px; */
+    border-style: solid;
+    border-width: 1px;
     margin-top: 0.5rem;
     padding-bottom: 0.2rem;
 }
@@ -235,40 +162,29 @@ nav a {
 .call {
     position: relative;
     top: 60%;
-    /* right: 10%; */
-    left: 215%;
+    right: 10%;
     margin-bottom: auto;
     padding: 0.7rem;
     border: 1px solid;
 }
 
-#ofertes, #paquets {
-    
-    margin-top: -70px !important;
-
-}
-
-
-
-#ofertes .articles {              /* #ofertes .articles  */
+#ofertes .articles {
     margin-top: 0.5rem;
-   border-style: solid;
+    border-style: solid;
     border-width: 1px;
 }
 
-/*
+
 .articles {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}*/
+}
 
 
 #paquets {
     /*align-content: stretch;*/
-   /* margin-top: 0.5rem;*/
-    margin: auto;
- 
+    margin-top: 0.5rem;
 }
 
 
@@ -286,9 +202,9 @@ nav a {
 .box {
     /*width:16%;
 	 margin-left:9%;*/
-   /* display: flex;
+    display: flex;
     width: 24%;
-    justify-content: space-evenly;*/
+    justify-content: space-evenly;
     border-style: solid;
     border-width: 1px;
 }
@@ -306,16 +222,11 @@ nav a {
 
 
 #footer {
-    margin-top: -70px;
-    /* display: flex;
-    justify-content: space-evenly; */
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
     border-style: solid;
     border-width: 1px;
-}
-
-
-.llegirmes {
-    display: none;
 }
 
 }
