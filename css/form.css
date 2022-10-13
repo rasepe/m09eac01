@@ -1,26 +1,28 @@
 @font-face {
     font-family: Varela;
     src: url("Varela-Regular.ttf");
-    }
-     
-    @font-face {
-      font-family: HindGuntur;
-      src: url("HindGuntur-Regular.ttf");
-      }
-  
-  h1, h2, form {
+}
+
+@font-face {
+    font-family: HindGuntur;
+    src: url("HindGuntur-Regular.ttf");
+}
+
+h1,
+h2,
+form {
     font-family: "Varela", sans-serif;
     color: #19191a;
-  }
+}
 
-  button {
-    background-color: #309ebb!important;
+button {
+    background-color: #309ebb !important;
     border: 0px;
-    --bs-btn-border-color: #309ebb!important;
-    --bs-btn-hover-border-color: #267C92!important;
-  }
+    --bs-btn-border-color: #309ebb !important;
+    --bs-btn-hover-border-color: #267C92 !important;
+}
 
-  .form-check-input:checked {
-    background-color: #309ebb!important;
-    border-color: #309ebb!important;
+.form-check-input:checked {
+    background-color: #309ebb !important;
+    border-color: #309ebb !important;
 }

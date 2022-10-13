@@ -1,8 +1,10 @@
 header {
-    height: 0px!important;
+    height: 0px !important;
 }
 
-nav, #anunci1, #anunci2 {
+nav,
+#anunci1,
+#anunci2 {
     display: none;
 }
 
@@ -12,7 +14,8 @@ nav, #anunci1, #anunci2 {
     padding-top: 1rem;
 }*/
 
-h2, #anunci3 {
+h2,
+#anunci3 {
     border-style: solid;
     border-width: 1px;
 }
@@ -33,59 +36,75 @@ h2, #anunci3 {
 
     #oferta1 img {
         display: none;
-    } 
+    }
 
-#oferta2 img, #oferta2 p, #oferta2 div {
-    display: none;
-} 
-
-#oferta3 img, #oferta3 p, #oferta3 div {
-    display: none;
-} 
-#oferta4 img, #oferta4 p, #oferta4 div {
-    display: none;
-} 
-
-.link button {
-    float: right;
-}
-
-#paquet1 img {
-    display: none;
-} 
-
-#paquet2 img, #paquet2 p{
-display: none;
-} 
-
-#paquet3 img, #paquet3 p{
-    display: none;
-    } 
-
-#paquet4 img, #paquet4 p{
-    display: none;
-    } 
-
-    #paquet5, #paquet6, #paquet7, #paquet8 {  
+    #oferta2 img,
+    #oferta2 p,
+    #oferta2 div {
         display: none;
-        } 
+    }
+
+    #oferta3 img,
+    #oferta3 p,
+    #oferta3 div {
+        display: none;
+    }
+
+    #oferta4 img,
+    #oferta4 p,
+    #oferta4 div {
+        display: none;
+    }
+
+    .link button {
+        float: right;
+    }
+
+    #paquet1 img {
+        display: none;
+    }
+
+    #paquet2 img,
+    #paquet2 p {
+        display: none;
+    }
+
+    #paquet3 img,
+    #paquet3 p {
+        display: none;
+    }
+
+    #paquet4 img,
+    #paquet4 p {
+        display: none;
+    }
+
+    #paquet5,
+    #paquet6,
+    #paquet7,
+    #paquet8 {
+        display: none;
+    }
 
 
-        .footer p {
-            display: none;
-        }
+    .footer p {
+        display: none;
+    }
 
-        .footer h3, .icones {
+    .footer h3,
+    .icones {
 
-            display: inline;
-        }
+        display: inline;
+    }
 
-        #dadescontacte, #segueixnos, #politica {
-            border-style: solid;
-            border-width: 1px;
-        }
+    #dadescontacte,
+    #segueixnos,
+    #politica {
+        border-style: solid;
+        border-width: 1px;
+    }
 
-   
+
 
 }
 
@@ -94,7 +113,8 @@ display: none;
 
 
 
-    #anunci1, #anunci2 {
+    #anunci1,
+    #anunci2 {
         display: flex;
     }
 
@@ -102,131 +122,132 @@ display: none;
         display: none;
     }
 
-    i.fa-solid, .articles h1 {
-        display:none;
+    i.fa-solid,
+    .articles h1 {
+        display: none;
     }
 
     h2 {
         border-style: none;
-        
+
     }
 
 
-    
-
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    background-color: antiquewhite;
-}
-
-.topnav input {
-    flex-basis: 40%;
-    background-color: salmon;
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    /*space-between;*/
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 0.5rem;
-    padding-bottom: 0.2rem;
-}
-
-nav a {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.anunci {
-    display: flex;
-    /*justify-content: flex-end; */
-    justify-content: space-between;
-    width: 100%;
-    height: 15rem;
-    margin-top: 0.5rem;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.anunci img {
-    width: 80%;
-    height: 100%;
-    object-fit: contain;
-    padding-right: 10px;
-}
-
-.call {
-    position: relative;
-    top: 60%;
-    right: 10%;
-    margin-bottom: auto;
-    padding: 0.7rem;
-    border: 1px solid;
-}
-
-#ofertes .articles {
-    margin-top: 0.5rem;
-    border-style: solid;
-    border-width: 1px;
-}
 
 
-.articles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        background-color: antiquewhite;
+    }
+
+    .topnav input {
+        flex-basis: 40%;
+        background-color: salmon;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        /*space-between;*/
+        border-style: solid;
+        border-width: 1px;
+        margin-top: 0.5rem;
+        padding-bottom: 0.2rem;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .anunci {
+        display: flex;
+        /*justify-content: flex-end; */
+        justify-content: space-between;
+        width: 100%;
+        height: 15rem;
+        margin-top: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .anunci img {
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+        padding-right: 10px;
+    }
+
+    .call {
+        position: relative;
+        top: 60%;
+        right: 10%;
+        margin-bottom: auto;
+        padding: 0.7rem;
+        border: 1px solid;
+    }
+
+    #ofertes .articles {
+        margin-top: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+    }
 
 
-#paquets {
-    /*align-content: stretch;*/
-    margin-top: 0.5rem;
-}
+    .articles {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 
 
-.link {
-    content: "\a";
-    white-space: pre;
-    display: flex;
-    justify-content: center;
-}
+    #paquets {
+        /*align-content: stretch;*/
+        margin-top: 0.5rem;
+    }
 
-.link button {
-    margin-top: 0.3rem;
-}
 
-.box {
-    /*width:16%;
+    .link {
+        content: "\a";
+        white-space: pre;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link button {
+        margin-top: 0.3rem;
+    }
+
+    .box {
+        /*width:16%;
 	 margin-left:9%;*/
-    display: flex;
-    width: 24%;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-width: 1px;
-}
+        display: flex;
+        width: 24%;
+        justify-content: space-evenly;
+        border-style: solid;
+        border-width: 1px;
+    }
 
 
-.anunci {
-    display: flex;
-    justify-content: center;
-}
+    .anunci {
+        display: flex;
+        justify-content: center;
+    }
 
-.anunci article {
-    align-self: flex-end;
-    padding-bottom: 3%;
-}
+    .anunci article {
+        align-self: flex-end;
+        padding-bottom: 3%;
+    }
 
 
-#footer {
-    margin-top: 0.5rem;
-    display: flex;
-    justify-content: space-evenly;
-    border-style: solid;
-    border-width: 1px;
-}
+    #footer {
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        border-style: solid;
+        border-width: 1px;
+    }
 
 }
