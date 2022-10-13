@@ -3,8 +3,6 @@ header {
     background-color: white;
 }
 
-
-
 .headerelement {
     margin-top: 1.5rem;
 }
@@ -14,7 +12,6 @@ nav,
 #anunci2 {
     display: none;
 }
-
 
 input {
     width: 100%;
@@ -33,15 +30,9 @@ input {
     border-width: 1px;
 }
 
-
 button {
     border-width: 1px;
 }
-
-/*
-.articles h1 {
-    padding-top: 1rem;
-}*/
 
 h2,
 #anunci3 {
@@ -50,12 +41,8 @@ h2,
 }
 
 #ofertes {
-
     margin-top: 0px;
-
 }
-
-
 
 #copyright {
     content: "\a";
@@ -75,8 +62,6 @@ h2,
 .retorn {
     text-align: left;
 }
-
-
 
 .retorn {
     color: cadetblue;
