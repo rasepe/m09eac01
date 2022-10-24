@@ -9,6 +9,7 @@ header {
 
 .imagelogo {
     margin: auto;
+
 }
 nav,
 #anunci1,
@@ -99,6 +100,29 @@ h2,
 .toindex {
     display: block;
 }
+
+#imatges, #audio {
+
+    width: inherit;
+}
+
+[class^="fa"] {
+    padding-right: 0.4rem;
+  }
+
+ .audio-track {
+    width: 150px;
+    height: 3px;
+    background-color: #6FC9DC; 
+    margin: 20px;
+} 
+ 
+.time {
+    width: 0;
+    height: 3px;
+    background-color: #01A2C0;
+}
+
 
 @media only screen and (max-width: 768px) {
 
