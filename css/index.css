@@ -383,6 +383,7 @@ h2,
     justify-content: space-evenly; */
         border-style: solid;
         border-width: 1px;
+        width: 100%;
     }
 
 
