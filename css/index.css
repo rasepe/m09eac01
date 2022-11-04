@@ -123,6 +123,14 @@ h2,
     background-color: #01A2C0;
 }
 
+video {
+    height: auto;
+    width: 100%;
+  }
+
+  #reproductor {
+    width: fit-content;
+  }
 
 @media only screen and (max-width: 768px) {
 

@@ -1,10 +1,10 @@
-//var audio = new Audio('media/WebPmix.mp3');
+//var media = new media('media/WebPmix.mp3');
 
 
-let audio = document.getElementById("audio"); // Take the audio element
-audio.volume = 0.5;
+let media = document.getElementById("media"); // Take the media element
+media.volume = 0.5;
 
-let time = document.querySelector(".time"); // Take the audio track
+let time = document.querySelector(".time"); // Take the media track
 let btnPlay = document.querySelector(".play"); // Take the play button
 let btnPause = document.querySelector(".pause"); // Take the pause button
 let btnDown = document.querySelector(".down"); // Take the switch button of the previous track
@@ -18,25 +18,25 @@ let btnEnd = document.querySelector(".end");
 //<button class="begin">Go to the BEGIN</button>
 //<button class="end">Go to the END</button>
 
-//Play audio, Pause audio, Volume DOWN, Volume UP i Volume OFF, Go to the BEGIN, Go to the END
+//Play media, Pause media, Volume DOWN, Volume UP i Volume OFF, Go to the BEGIN, Go to the END
 
 btnPlay.addEventListener("click", function() {
-    audio.play(); // Start the song
+    media.play(); // Start the song
     // Start interval 
-    audioPlay = setInterval(function() {
+    mediaPlay = setInterval(function() {
         // Get the value of what second the song is at
-        let audioTime = Math.round(audio.currentTime);
+        let mediaTime = Math.round(media.currentTime);
         // We get songs all the time
-        let audioLength = Math.round(audio.duration)
+        let mediaLength = Math.round(media.duration)
         // Assign a width to an element at time
-        time.style.width = (audioTime * 100) / audioLength + '%';
+        time.style.width = (mediaTime * 100) / mediaLength + '%';
         // Compare what second the track is now and how long in total
         // And check that the treck variable is less than four
-        // if (audioTime == audioLength && treck < 3) {
+        // if (mediaTime == mediaLength && treck < 3) {
         //     treck++; // then Increase the variable 
         //     switchTreck(treck); // change track
         // // Otherwise we check the same, but the treck variable is greater than or equal to four
-        // } else if (audioTime == audioLength && treck >= 3) {
+        // } else if (mediaTime == mediaLength && treck >= 3) {
         //     treck = 0; // then we assign treck to zero
         //     switchTreck(treck); Change track
         // }
@@ -44,36 +44,36 @@ btnPlay.addEventListener("click", function() {
 });
 
 btnPause.addEventListener("click", function() {
-    audio.pause();
+    media.pause();
     
 });
 
 btnDown.addEventListener("click", function() {
-    if (audio.volume>=0.1) {
-        audio.volume = audio.volume - 0.1;
+    if (media.volume>=0.1) {
+        media.volume = media.volume - 0.1;
     }
     
     
 });
 
 btnUp.addEventListener("click", function() {
-    if (audio.volume<=0.9) {
-    audio.volume = audio.volume + 0.1;
+    if (media.volume<=0.9) {
+    media.volume = media.volume + 0.1;
     }
 });
 
 btnOff.addEventListener("click", function() {
-    audio.volume = 0;
+    media.volume = 0;
     
 });
 
 btnBegin.addEventListener("click", function() {
 
-    audio.currentTime = 0;
+    media.currentTime = 0;
  
 });
 
 btnEnd.addEventListener("click", function() {
-    audio.currentTime = audio.duration;
+    media.currentTime = media.duration;
     
 });
