@@ -13,7 +13,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather' rel='stylesheet'
         type='text/css'>
     <!-- 	<link rel="stylesheet" href="css/reset.css"> CSS reset -->
-    <!-- Resource style -->
+    <link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
 
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
@@ -21,6 +21,7 @@
 
     
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
+   
 
     <title>Rafael Serra Pérez</title>
 </head>
@@ -64,36 +65,49 @@
 
 
 
-        <section id="reproductor">
-            <div class="row">
+        <section id="animacions">
+            <p class="ajuda">*Fes click al títol per veure</p>
+                <h1 id="titoloferta">Ofertes de darrera hora</h1>
+                <!-- <p> -->
+               <!-- <a href="#oferta1" class="noocult">Veure més</a> -->
+                 <a href="#titoloferta" class="ocult">&nbsp;</a> 
+            <!-- </p> -->
+                <div class="oferta">
+                    <div class="ocult">
                 
-                    <h1>Format WebP amb base musical</h1>
-               
-            
+                        
+                        <img src="images/aspa.png" alt="oferta1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                    orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                    Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                    pretium orci, et imperdiet sapien erat a elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                    orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                    Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                    pretium orci, et imperdiet sapien erat a elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                    orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                    Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                    pretium orci, et imperdiet sapien erat a elit.</p>
                 </div>
-           
-            <audio id="media" src="media/WebPmix.mp3"></audio>  <!-- treure controls després -->
+                <div class="ocult">
+                    <img src="images/aspa.png" alt="oferta2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                        orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                        Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                        pretium orci, et imperdiet sapien erat a elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                        orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                        Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                        pretium orci, et imperdiet sapien erat a elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet
+                        orci iaculis, ultricies leo et, feugiat urna. Nunc eu luctus arcu, ac sodales metus.
+                        Donec vitae sollicitudin leo. In rutrum, mauris eu scelerisque blandit, magna dolor
+                        pretium orci, et imperdiet sapien erat a elit.</p>
 
-        
-                
-
-                <div id="controls cd-box">
-                    <div class="audio-track row"><div class="time"></div></div>
                
-                    <div class="row">
-                    <button class="btn play col-md-1 m-1"><i class="fa-solid fa-play"></i></button>
-                    <button class="btn pause col-md-1 m-1"><i class="fa-solid fa-pause"></i></button>
-                    <button class="btn down col-md-1 m-1"><i class="fa-solid fa-volume-low"></i></button>
-                    <button class="btn up col-md-1 m-1"><i class="fa-solid fa-volume-high"></i></button>
-                    <button class="btn off col-md-1 m-1"><i class="fa-solid fa-volume-xmark"></i></button>
-                    <button class="btn begin col-md-1 m-1"><i class="fa-solid fa-backward-fast"></i></button>
-                    <button class="btn end col-md-1 m-1"><i class="fa-solid fa-forward-fast"></i></button>
                 </div>
-                </div>
-                <p>Projecte Audacity (<a href="media/projecte.aup">projecte.aup</a>)</p>
-            
-                
-                
+            </div>
+
+
+
+
 
 
         </section>
@@ -127,7 +141,7 @@
 
 
     </div>
-    <!-- </main> -->
+   <!-- </main> -->
 
 
    
@@ -137,6 +151,7 @@
         crossorigin="anonymous"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/animacio.js"></script>
 </body>
 
 </html>

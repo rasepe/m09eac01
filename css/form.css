@@ -26,3 +26,17 @@ button {
     background-color: #309ebb !important;
     border-color: #309ebb !important;
 }
+
+input[type=radio] {
+    position: relative; 
+    /* left: 0; */
+    /* top: 0; */
+    /* margin: 0; */
+    /* padding: 0; */
+    opacity: 1;
+}
+
+
+.form-check-input {
+    float:none!important;
+}
