@@ -4,6 +4,6 @@ var promocio = document.querySelector(".promocio > div");
 titol.addEventListener("mouseover", function(){
     promocio.className = "noocult";
 }, false);
-titol.addEventListener("mouseout", function(){
+titol.addEventListener("click", function(){
     promocio.className = "ocult";
 }, false);

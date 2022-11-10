@@ -7,7 +7,7 @@ for (let i = 0; i < oferta.length; i++) {
     titol.addEventListener("mouseover", function(){
         oferta[i].className = "noocult";
     }, false);
-    titol.addEventListener("mouseout", function(){
+    titol.addEventListener("click", function(){
         oferta[i].className = "ocult";
     }, false);
   }

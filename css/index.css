@@ -1,3 +1,11 @@
+/*input,
+textarea,
+select, body  
+ {
+  
+  font-size: 1.05rem;
+} */
+
 header {
     position: fixed;
     background-color: white;
@@ -19,6 +27,7 @@ nav,
 
 input {
     width: 100%;
+    
 }
 
 .row {
@@ -97,7 +106,7 @@ h2,
     background-color: antiquewhite;
 }
 
-.toindex {
+.link {
     display: block;
 }
 
@@ -131,6 +140,10 @@ video {
   #reproductor {
     width: fit-content;
   }
+
+#footerplaylist {
+    margin-top: 9rem;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -242,10 +255,10 @@ p.ajuda {
 }
 
 .ocult {
+    margin-top: -1000px;
     visibility: hidden;
     opacity:0;
     transition: visibility 0s 2s, opacity 2s linear;
-
 }
 
 
@@ -286,16 +299,26 @@ p.ajuda {
 
 .promocio img, .oferta img {
     float: right;
+    padding: 3rem;
    /* display: block;
     margin-left: auto;*/
-    transform: translate(-15px,45px);
-    transition: all 5s ease-in;
+   
+    transition: all 3s ease-in;
 }
+
+.promocio img:hover, .oferta img:hover {
+    
+    transform: translate(-45px,45px);
+} 
 
 .promocio p, .oferta p {
     padding: 3rem;
-    transform: translateX(30px,-25px);
+   
     transition: all 3s ease-in-out;
+}
+
+.promocio p:hover, .oferta p:hover {
+    transform: translate(-45px,45px);
 }
 
 
@@ -332,12 +355,22 @@ a.ocult {
     animation: ample 5s;
 }
 
+#footertransicio {
+    margin-top: 27rem;
+}
+
+#gifanimat {
+    margin-top:18rem;
+}
+
 @keyframes ample {
     0%   {width: 0%;}
     100% {width: 100%;}
   }
 
-
+#animacions {
+    width: auto;
+}
 
 #graficdonut {
     display: none;
