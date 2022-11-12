@@ -261,36 +261,23 @@ p.ajuda {
     transition: visibility 0s 2s, opacity 2s linear;
 }
 
-
-
 .noocult {
     visibility: visible;
-    /*margin-top: 0px;*/
-    /*padding: 15px;*/
     border: solid 5px black;
     background: #EEE;
     opacity: 1; 
-   /* transition: opacity 5s linear;*/
-   /* transform: translate(100px);*/
     transition: all 5s ease;
 }
 
 
 #titolpromocio {
-/*    opacity: 1;*/
-
     transition: all 5s ease;
 }
-
-
-     
-
-
 
 #titolpromocio:hover {
     color: #01A2C0;
     transform: translate(50px);
-
+    font-size: 150%;
 }
 
 
@@ -300,20 +287,15 @@ p.ajuda {
 .promocio img, .oferta img {
     float: right;
     padding: 3rem;
-   /* display: block;
-    margin-left: auto;*/
-   
     transition: all 3s ease-in;
 }
 
 .promocio img:hover, .oferta img:hover {
-    
     transform: translate(-45px,45px);
 } 
 
 .promocio p, .oferta p {
     padding: 3rem;
-   
     transition: all 3s ease-in-out;
 }
 
@@ -323,36 +305,36 @@ p.ajuda {
 
 
 #titoloferta {
-    /*    opacity: 1;*/
-    
-       /* transition: all 5s ease;*/
-      position:relative;
-      /*text-align: center;*/
-        animation-duration: 1.5s;
-        animation-name: rebot;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: rebot;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rebot {
+    from {
+        left: 0px;
     }
 
-    @keyframes rebot {
-        from {
-        left: 0px;
-        }
-        50%  {
+    50% {
         left: 50px;
         color: #01A2C0;
-        }
-        to {
-            left:0px;
-        }
-        }
+        font-size: 150%;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
 a.ocult {
     display: none;
 }
 
 .oferta div {
     margin-bottom: 10px;
-    animation: ample 5s;
+    animation: ample 10s;
 }
 
 #footertransicio {
