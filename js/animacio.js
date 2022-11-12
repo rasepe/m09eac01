@@ -1,5 +1,8 @@
 var titol = document.querySelector("#titoloferta");
+var creu = document.querySelectorAll(".oferta i");
 var oferta = document.querySelectorAll(".oferta > div");
+// Toggle show/hide classes on test content
+
 
 
 for (let i = 0; i < oferta.length; i++) {
@@ -7,7 +10,7 @@ for (let i = 0; i < oferta.length; i++) {
     titol.addEventListener("mouseover", function(){
         oferta[i].className = "noocult";
     }, false);
-    titol.addEventListener("click", function(){
+    creu[i].addEventListener("click", function(){
         oferta[i].className = "ocult";
     }, false);
   }

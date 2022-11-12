@@ -1,11 +1,3 @@
-/*input,
-textarea,
-select, body  
- {
-  
-  font-size: 1.05rem;
-} */
-
 header {
     position: fixed;
     background-color: white;
@@ -19,6 +11,7 @@ header {
     margin: auto;
 
 }
+
 nav,
 #anunci1,
 #anunci2 {
@@ -27,7 +20,7 @@ nav,
 
 input {
     width: 100%;
-    
+
 }
 
 .row {
@@ -41,6 +34,7 @@ input {
 .menu {
     border-style: solid;
     border-width: 1px;
+    margin: auto;
 }
 
 button {
@@ -110,22 +104,23 @@ h2,
     display: block;
 }
 
-#imatges, #audio {
+#imatges,
+#audio {
 
     width: inherit;
 }
 
 [class^="fa"] {
     padding-right: 0.4rem;
-  }
+}
 
- .audio-track {
+.audio-track {
     width: 150px;
     height: 3px;
-    background-color: #6FC9DC; 
+    background-color: #6FC9DC;
     margin: 20px;
-} 
- 
+}
+
 .time {
     width: 0;
     height: 3px;
@@ -135,14 +130,26 @@ h2,
 video {
     height: auto;
     width: 100%;
-  }
+}
 
-  #reproductor {
+#reproductor {
     width: fit-content;
-  }
+}
 
 #footerplaylist {
     margin-top: 9rem;
+}
+
+.explicacio {
+    text-align: inherit;
+}
+
+div.explicacio {
+    margin-top: 3rem;
+}
+
+img.explicacio {
+    display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -255,23 +262,28 @@ p.ajuda {
 }
 
 .ocult {
-    margin-top: -1000px;
+    margin-top: -280px;
     visibility: hidden;
-    opacity:0;
-    transition: visibility 0s 2s, opacity 2s linear;
+    opacity: 0;
+    transition: all 5s ease-in;
+}
+
+.promocio i,
+.oferta i {
+    float: right;
 }
 
 .noocult {
     visibility: visible;
     border: solid 5px black;
     background: #EEE;
-    opacity: 1; 
-    transition: all 5s ease;
+    opacity: 1;
+    transition: all 5s ease-out;
 }
 
 
 #titolpromocio {
-    transition: all 5s ease;
+    transition: all 2s ease;
 }
 
 #titolpromocio:hover {
@@ -284,32 +296,37 @@ p.ajuda {
 
 
 
-.promocio img, .oferta img {
+.promocio img,
+.oferta img {
     float: right;
     padding: 3rem;
     transition: all 3s ease-in;
 }
 
-.promocio img:hover, .oferta img:hover {
-    transform: translate(-45px,45px);
-} 
+.promocio img:hover,
+.oferta img:hover {
+    transform: translate(-45px, 45px);
+}
 
-.promocio p, .oferta p {
+.promocio p,
+.oferta p {
     padding: 3rem;
     transition: all 3s ease-in-out;
 }
 
-.promocio p:hover, .oferta p:hover {
-    transform: translate(-45px,45px);
+.promocio p:hover,
+.oferta p:hover {
+    transform: translate(-45px, 45px);
 }
 
 
 #titoloferta {
+    display: inline;
     position: relative;
     animation-duration: 1.5s;
     animation-name: rebot;
     animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
 }
 
 @keyframes rebot {
@@ -337,21 +354,31 @@ a.ocult {
     animation: ample 10s;
 }
 
-#footertransicio {
-    margin-top: 27rem;
-}
 
 #gifanimat {
-    margin-top:18rem;
+    margin-top: 18rem;
 }
 
 @keyframes ample {
-    0%   {width: 0%;}
-    100% {width: 100%;}
-  }
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
 
 #animacions {
     width: auto;
+}
+
+#grafica {
+    width: inherit;
+}
+
+#escullgrafic {
+    margin-top: 20rem;
 }
 
 #graficdonut {
@@ -399,10 +426,6 @@ a.ocult {
 
     nav {
         display: block;
-        /* justify-content: space-between; */
-        /*space-between;*/
-        /* border-style: solid;
-    border-width: 1px; */
         margin-top: 0.5rem;
         padding-bottom: 0.2rem;
     }
@@ -415,7 +438,6 @@ a.ocult {
 
     .anunci {
         display: flex;
-        /*justify-content: flex-end; */
         justify-content: space-between;
         width: 100%;
         height: 15rem;
@@ -434,42 +456,31 @@ a.ocult {
     .call {
         position: relative;
         top: 60%;
-        /* right: 10%; */
         left: 215%;
         margin-bottom: auto;
         padding: 0.7rem;
         border: 1px solid;
     }
 
+
     #ofertes,
     #paquets {
-
-        margin-top: -70px !important;
+        width: -webkit-fill-available;
+        margin-top: -5.5rem !important;
 
     }
 
 
 
     #ofertes .articles {
-        /* #ofertes .articles  */
         margin-top: 0.5rem;
         border-style: solid;
         border-width: 1px;
     }
 
-    /*
-.articles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}*/
-
 
     #paquets {
-        /*align-content: stretch;*/
-        /* margin-top: 0.5rem;*/
         margin: auto;
-
     }
 
 
@@ -485,11 +496,6 @@ a.ocult {
     }
 
     .box {
-        /*width:16%;
-	 margin-left:9%;*/
-        /* display: flex;
-    width: 24%;
-    justify-content: space-evenly;*/
         border-style: solid;
         border-width: 1px;
     }
@@ -508,8 +514,6 @@ a.ocult {
 
     #footer {
         margin-top: -70px;
-        /* display: flex;
-    justify-content: space-evenly; */
         border-style: solid;
         border-width: 1px;
         width: 100%;

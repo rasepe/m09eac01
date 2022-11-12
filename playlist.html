@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/style-guide.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather' rel='stylesheet'
         type='text/css'>
-    <!-- 	<link rel="stylesheet" href="css/reset.css"> CSS reset -->
-    <!-- Resource style -->
 
     <link href="fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
     <link href="fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet">
@@ -21,50 +19,48 @@
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
+        $(document).ready(function () {
 
-        new jPlayerPlaylist({
-            jPlayer: "#jquery_jplayer_1",
-            cssSelectorAncestor: "#jp_container_1"
-        }, [
-            {
-                title: "Big Buck Bunny Trailer",
-                artist: "Blender Foundation",
-                free: true,
-                m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-                ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
-                webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
-                poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
-            },
-            {
-                title: "Finding Nemo Teaser",
-                artist: "Pixar",
-                m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
-                ogv: "http://www.jplayer.org/video/ogv/Finding_Nemo_Teaser.ogv",
-                webmv: "http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm",
-                poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
-            },
-            {
-                title: "Incredibles Teaser",
-                artist: "Pixar",
-                m4v: "http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v",
-                ogv: "http://www.jplayer.org/video/ogv/Incredibles_Teaser.ogv",
-                webmv: "http://www.jplayer.org/video/webm/Incredibles_Teaser.webm",
-                poster: "http://www.jplayer.org/video/poster/Incredibles_Teaser_640x272.png"
-            }
-        ], {
-            swfPath: "js",
-            supplied: "webmv, ogv, m4v",
-            useStateClassSkin: true,
-            autoBlur: false,
-            smoothPlayBar: true,
-            keyEnabled: true
+            new jPlayerPlaylist({
+                jPlayer: "#jquery_jplayer_1",
+                cssSelectorAncestor: "#jp_container_1"
+            }, [
+                {
+                    title: "Vista de la platja de La Concha",
+                    artist: "Rafael Serra",
+                    free: true,
+                    m4v: "media/donostia1.m4v",
+                    webmv: "media/donostia1.webm",
+                    poster: "media/donostia1.png"
+                },
+                {
+                    title: "Remullant-se a la platja de La Concha",
+                    artist: "Rafael Serra",
+                    m4v: "media/donostia2.m4v",
+                    webmv: "media/donostia2.webm",
+                    poster: "media/donostia2.png"
+                },
+                {
+                    title: "Remullant-se a la platja de Gros",
+                    artist: "Rafael Serra",
+                    m4v: "media/donostia3.m4v",
+                    webmv: "media/donostia3.webm",
+                    poster: "media/donostia3.png"
+                }
+            ], {
+                swfPath: "js",
+                supplied: "webmv, ogv, m4v",
+                useStateClassSkin: true,
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true
+            });
+
         });
 
-    });
-
     </script>
-
+    <title>Playlist</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
 
@@ -75,7 +71,7 @@
                 <div class="col-2 d-md-none headerelement"><a href="index.html"><i class="fa-solid fa-xmark"></i></a>
                 </div>
                 <div class="col-md-3 d-none d-md-block imagelogo"><a href="index.html"><img src="images/logo.png"
-                            alt="logo" width="35%" ></a></div>
+                            alt="logo" width="35%"></a></div>
                 <div class="col-md-6 d-none d-md-block" style="background-color:rgb(190, 217, 241);"><input type="text"
                         placeholder="Buscar..."></div>
                 <div class="col-md-1 d-none d-md-block headerelement"><a href="resultats.html"><i
@@ -86,20 +82,28 @@
         </header>
         <nav class="noindex">
             <div class="row d-none d-md-flex">
-                <div class="col-md-1 menu"><a class="link" href="index.html"><i class="fa-solid fa-house"></i>Inici</a></div>
+                <div class="col-md-1 menu"><a class="link" href="index.html"><i class="fa-solid fa-house"></i>Inici</a>
+                </div>
                 <div class="col-md-1 menu"><i class="fa-regular fa-star"></i>Ofertes</div>
                 <div class="col-md-1 menu"><i class="fa-solid fa-hand-holding-heart"></i>Paquets</div>
                 <div class="col-md-1 menu"><i class="fa-regular fa-envelope"></i>Contacte</div>
-                <div class="col-md-1 menu"><a class="link" href="imatges.html"><i class="fa-regular fa-images"></i>Imatges</a></div>
-                <div class="col-md-1 menu"><a class="link" href="audio.html"><i class="fa-regular fa-file-audio"></i>Audio</a></div>
-                <div class="col-md-1 menu"><a class="link" href="video.html"><i class="fa-solid fa-video"></i>Video</a></div>
-                <div class="col-md-1 menu"><i class="fa-solid fa-video"></i>Playlist</div>
-                <div class="col-md-1 menu"><a class="link" href="transicions.html"><i class="fa-solid fa-video"></i>Transicions</a></div>
-                <div class="col-md-1 menu"><a class="link" href="animacions.html"><i class="fa-solid fa-video"></i>Animacions</a></div>
-                <div class="col-md-1 menu"><a class="link" href="grafica.html"><i class="fa-solid fa-video"></i>Gràfica</a></div>
+                <div class="col-md-1 menu"><a class="link" href="imatges.html"><i
+                            class="fa-regular fa-images"></i>Imatges</a></div>
+                <div class="col-md-1 menu"><a class="link" href="audio.html"><i
+                            class="fa-regular fa-file-audio"></i>Audio</a></div>
+                <div class="col-md-1 menu"><a class="link" href="video.html"><i class="fa-solid fa-video"></i>Video</a>
+                </div>
+                <div class="col-md-1 menu" style="background-color: #6FC9DC;"><i class="fa-solid fa-list"></i>Playlist
+                </div>
+                <div class="col-md-1 menu"><a class="link" href="transicions.html"><i
+                            class="fa-solid fa-star-half"></i>Transicions</a></div>
+                <div class="col-md-1 menu"><a class="link" href="animacions.html"><i
+                            class="fa-solid fa-film"></i>Animacions</a></div>
+                <div class="col-md-1 menu"><a class="link" href="grafica.html"><i
+                            class="fa-solid fa-chart-pie"></i>Gràfica</a></div>
             </div>
         </nav>
-
+        <h1>Playlist</h1>
         <div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
             <div class="jp-type-playlist">
                 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
@@ -148,42 +152,80 @@
                 </div>
                 <div class="jp-no-solution">
                     <span>Update Required</span>
-                    To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    To play the media you will need to either update your browser to a recent version or update your <a
+                        href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
                 </div>
             </div>
         </div>
 
-
-
-    
-    <footer id="footerplaylist">
-        <div id="footer" class="row">
-            <section class="footer col-md-4" id="dadescontacte">
-                <h3>Dades de contacte</h3>
-                <p>text</p>
-            </section>
-            <section class="footer col-md-4" id="segueixnos">
-                <h3>Segueix-nos</h3>
-                <div class="icones">
-                    <span id="facebook"><i class="fa-brands fa-facebook"></i></span>
-                    <span id="twitter"><i class="fa-brands fa-twitter"></i></span>
-                    <span id="instagram"><i class="fa-brands fa-instagram"></i></span>
-                </div>
-            </section>
-            <section class="footer col-md-3" id="politica">
-                <h3>Política</h3>
-                <p>text</p>
-            </section>
+        <div class="row explicacio">
+            <h2>Com ho hem fet?</h2>
+            <p>
+            <ul>
+                <li>Seguir els passos 1 a 5 de <a
+                        href="https://jplayer.org/latest/quick-start-guide/">https://jplayer.org/latest/quick-start-guide/</a>
+                    (incloure jQuery, jPlayer i un skin). Podem obtenir una CDN de jQuery i jPlayer, però ens haurem de
+                    descarregar jPlayer per poder pujar els fitxers de l'skin al nostre web.</li>
+                <li>Copiem el codi font de la demo: <a
+                        href="https://jplayer.org/latest/demo-02-video/">https://jplayer.org/latest/demo-02-video/</a>
+                </li>
+                <ul>
+                    <li>
+                        En concret, aquest script que afegirem al head:<img class="explicacio" src="images/head.png"
+                            alt="script">
+                    </li>
+                    <li>
+                        (Nota: hem d'adaptar la propietat swfPath, esborrar l'última línia i recordar-nos de tancar la
+                        funció
+                        amb “});”)
+                    </li>
+                    <li>
+                        Bàsicament, tenim el constructor de la playlist, que buscarà el reproductor a l'element amb id
+                        <em>jquery_jplayer_1</em> i afegirà els tres vídeos que veiem.
+                    </li>
+                </ul>
+                <li>
+                    I aquest codi que afegirem al body:<img class="explicacio" src="images/body.png" alt="script">
+                </li>
+                <ul>
+                    <li>Aquí hi ha el cos del reproductor (veure id <em>jquery:jplayer_1</em>). El codi de la playlist
+                        (veure classe <em>jp-playlist</em>)
+                        queda com un esquelet nu i el generarà Javascript.</li>
+                    <li>Nota: l'skin no es visualitza bé en Chrome, però sí en Mozilla.</li>
+                </ul>
+            </ul>
+            </p>
         </div>
-        <div id="copyright">
-            <span>Copyright ©</span>
-        </div>
-    </footer>
 
-</div>
 
-    </body>
-    
-    </html>
+        <footer id="footerplaylist">
+            <div id="footer" class="row">
+                <section class="footer col-md-4" id="dadescontacte">
+                    <h3>Dades de contacte</h3>
+                    <p>text</p>
+                </section>
+                <section class="footer col-md-4" id="segueixnos">
+                    <h3>Segueix-nos</h3>
+                    <div class="icones">
+                        <span id="facebook"><i class="fa-brands fa-facebook"></i></span>
+                        <span id="twitter"><i class="fa-brands fa-twitter"></i></span>
+                        <span id="instagram"><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                </section>
+                <section class="footer col-md-3" id="politica">
+                    <h3>Política</h3>
+                    <p>text</p>
+                </section>
+            </div>
+            <div id="copyright">
+                <span>Copyright ©</span>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
 
 </html>
